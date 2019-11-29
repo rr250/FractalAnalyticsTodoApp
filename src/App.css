@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.btn {
+  height: 50px;
+  font-family: cursive;
+  font-size: 18px;
+  border-radius: 6px;
+  margin: 20px;
+  display: inline-block;
+  border: none;
+  background: rgb(103, 188, 221);
+  color: #fff;
+  padding: 7px 20px;
+  cursor: pointer;
+  box-shadow: 0px 2px 7px 0px #77b8d8ad;
+}
+
+.btn:hover {
+  background: rgb(23, 150, 209);
+  box-shadow: 0px 1px 3px 0px #77b8d8ad;
+}
+
+.card {
+  width: 400px;
+  height: 200px;
+  background: rgb(253, 253, 253);
+  padding: 10px;
+  display: inline-block;
+  border-radius: 6px;
+  margin: 20px 30px;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card-container {
+  width: 75%;
+  margin: 5px auto;
+}
+
+.title {
+  font-family: cursive;
+  font-size: 21px;
+  color: #3c3c3c;
+  padding: 10px;
+}
+
+.tag {
+  position: absolute;
+  height: 20px;
+  background: rgb(165, 165, 165);
+  padding: 6px 10px;
+  bottom: 60px;
+  margin: 12px;
+  border-radius: 12px;
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+}
+
+.btns {
+  display: inline-block;
+  font-family: sans-serif;
+  width:25%;
+  height: 40px;
+  padding: 6px;
+  margin: 10px 12px;
+  color: black;
+  font-weight: 600;
+  border: 3px solid gray;
+  border-radius: 3px;
+  background: white;
+}
+
+.btns:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.complete {
+  border-color: rgb(93, 197, 93);
+}
+.delete {
+  border-color: rgb(224, 53, 53)
+}
+.edit {
+  border-color: rgb(76, 150, 235)
+}
+
+.u-btns {
+  position: absolute;
+  width: 100%;
+  bottom: 5px;
+}
+
+/*for mobile users-----------*/
+
+@media(max-width: 800px) {
+  form {
+    display: block !important;
+    margin: 0 50px;
+  }
+  .title-input {
+    width: 100%;
+    padding: 15px 0 15px 15px !important;
+    margin: 0 !important;
+  }
+  .label-input {
+    display: inline-block;
+    width: 60%;
+    margin-left: 0 !important;
+    font-size: 18px !important;
+  }
+  .btn {
+    display: inline-block;
+    height: 40px;
+    margin:15px;
+  }
+  .card-container {
+    width: 90%;
+  }
+}
+
+@media( max-width: 560px) {
+  .btn {
+    margin: 15px 2px;
+  }
+
+  .label-input {
+    width: 50%;
+  }
+  form {
+    margin: 0 10px;
+  }
+  .card-container {
+    width: 95%;
+  }
+  .card {
+    width: 90%;
+    height: 150px;
+    margin: 30px auto;
+  }
+}
